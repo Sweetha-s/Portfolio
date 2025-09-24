@@ -24,14 +24,144 @@
     </nav>
   </header>
 
-  <!-- Achievements -->
+  <!-- Achievements Accordion -->
   <main class="container my-5 flex-grow-1">
-    <ul class="list-group">
-      <li class="list-group-item">Best Outgoing Student — CEOA Matric Hr. Sec. School</li>
-      <li class="list-group-item">Secured 97.17% in HSC Board Exams</li>
-      <li class="list-group-item">Consistent Dean’s Merit List Holder at TCE</li>
-      <li class="list-group-item">Presented Paper on Cybersecurity in National Symposium</li>
-    </ul>
+    <h2 class="text-center mb-4 fw-bold text-primary">Achievements & Activities</h2>
+
+    <div class="accordion shadow" id="achievementsAccordion">
+
+      <!-- Co-Curricular Activities -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button fw-bold text-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Co-Curricular Activities
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#achievementsAccordion">
+          <div class="accordion-body">
+            <div class="row g-3">
+
+              <div class="col-md-6">
+                <div class="card shadow-sm h-100">
+                  <div class="card-body">
+                    <h5 class="card-title">1st Place in Web Development</h5>
+                    <p class="card-text">Developed a travel blog <em>(Roaming Stories)</em> during 3rd semester.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="card shadow-sm h-100">
+                  <div class="card-body">
+                    <h5 class="card-title">College FS’Tival-24</h5>
+                    <p class="card-text">Presented projects & Bootstrap demo (05-10-2024).</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="card shadow-sm h-100">
+                  <div class="card-body">
+                    <h5 class="card-title">Software Development Workshop</h5>
+                    <p class="card-text">Attended at NIT (08–10 Mar 2024).</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="card shadow-sm h-100">
+                  <div class="card-body">
+                    <h5 class="card-title">AI & ML with DL Workshop</h5>
+                    <p class="card-text">Attended at IITM (30–31 Mar 2024).</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="card shadow-sm h-100">
+                  <div class="card-body">
+                    <h5 class="card-title">KLA Workshop</h5>
+                    <p class="card-text">Special Mention Gift for active participation (26 Jul 2025).</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="card shadow-sm h-100">
+                  <div class="card-body">
+                    <h5 class="card-title">HackFest Hackathon</h5>
+                    <p class="card-text">Team-based project presentation (07 Apr 2025).</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="card shadow-sm h-100">
+                  <div class="card-body">
+                    <h5 class="card-title">Kaggle Competition</h5>
+                    <p class="card-text">OpenAI to Z Challenge writeup & solutions (2025).</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="card shadow-sm h-100">
+                  <div class="card-body">
+                    <h5 class="card-title">Adobe India Hackathon</h5>
+                    <p class="card-text">Cleared aptitude round, industry exposure (2025).</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Extra-Curricular Activities -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed fw-bold text-warning" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Extra-Curricular Activities
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#achievementsAccordion">
+          <div class="accordion-body">
+            <div class="row g-3">
+
+              <div class="col-md-6">
+                <div class="card shadow-sm h-100">
+                  <div class="card-body">
+                    <h5 class="card-title">CSI Member</h5>
+                    <p class="card-text">Active member of Computer Society of India (2023–Present).</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="card shadow-sm h-100">
+                  <div class="card-body">
+                    <h5 class="card-title">YRC Member</h5>
+                    <p class="card-text">Youth Red Cross member, engaged in social service & community programs (2023–Present).</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="card shadow-sm h-100">
+                  <div class="card-body">
+                    <h5 class="card-title">Editor - Dept. Magazine</h5>
+                    <p class="card-text">Edited 2 editions, managed content & proofreading (2023–2024).</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </main>
 
   <!-- Footer -->
@@ -39,5 +169,6 @@
     <p>© <script>document.write(new Date().getFullYear());</script> Sweetha S. All rights reserved.</p>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
