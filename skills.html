@@ -6,74 +6,167 @@
   <title>Skills - Sweetha S</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+  <style>
+    body {
+      background: linear-gradient(135deg, #f8f9fa, #e9f5ff);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .section-title {
+      text-align: center;
+      font-weight: 700;
+      color: #0d6efd;
+      margin-bottom: 2rem;
+      position: relative;
+    }
+
+    .section-title::after {
+      content: "";
+      display: block;
+      width: 80px;
+      height: 4px;
+      background: #0d6efd;
+      margin: 10px auto;
+      border-radius: 2px;
+    }
+
+    .skill-card {
+      text-align: center;
+      padding: 2rem 1rem;
+      border-radius: 15px;
+      background: #fff;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+    }
+
+    .skill-icon {
+      font-size: 3rem;
+      color: #0d6efd;
+      margin-bottom: 1rem;
+    }
+
+    .skill-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .skill-desc {
+      font-size: 0.95rem;
+      color: #555;
+    }
+  </style>
 </head>
 <body class="d-flex flex-column min-vh-100">
 
-  <!-- Navbar -->
+<!-- Header -->
 <header class="sticky-top bg-white shadow p-3">
   <nav class="navbar navbar-expand-md navbar-light">
-    <div class="container-fluid">
+    <div class="container">
       <a class="navbar-brand fw-bold text-primary" href="index.html">Sweetha S</a>
-      <!-- Toggler / Hamburger -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" 
+              aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
-      <!-- Collapsible links -->
       <div class="collapse navbar-collapse" id="navbarContent">
-        <ul class="navbar-nav ms-auto gap-3">
-          <li class="nav-item"><a class="nav-link text-dark" href="index.html">About</a></li>
-          <li class="nav-item"><a class="nav-link text-dark" href="skills.html">Skills</a></li>
-          <li class="nav-item"><a class="nav-link text-dark" href="projects.html">Projects</a></li>
-          <li class="nav-item"><a class="nav-link text-dark" href="internships.html">Internships</a></li>
-          <li class="nav-item"><a class="nav-link text-dark" href="education.html">Education</a></li>
-          <li class="nav-item"><a class="nav-link text-dark" href="certifications.html">Certifications</a></li>
-          <li class="nav-item"><a class="nav-link text-dark" href="achievements.html">Achievements</a></li>
-          <li class="nav-item"><a class="nav-link text-dark" href="hobbies.html">Hobbies</a></li>
-          <li class="nav-item"><a class="nav-link text-dark" href="contact.html">Contact</a></li>
+        <ul class="navbar-nav ms-auto gap-2">
+          <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active fw-semibold text-primary" href="skills.html">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="internships.html">Internships</a></li>
+          <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="certifications.html">Certifications</a></li>
+          <li class="nav-item"><a class="nav-link" href="achievements.html">Achievements</a></li>
+          <li class="nav-item"><a class="nav-link" href="hobbies.html">Hobbies</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
 </header>
 
+<!-- Content -->
+<main class="container my-5 flex-grow-1">
 
-  <!-- Content -->
-  <main class="container my-5 flex-grow-1">
-    <div class="row g-4">
-      <div class="col-md-6">
-        <div class="card shadow-sm">
-          <div class="card-body">
-            <h3 class="h6 fw-semibold mb-2">Programming & Tools</h3>
-            <ul>
-              <li>Python, C, C++, Java (basics)</li>
-              <li>Web: HTML, CSS, Bootstrap, React</li>
-              <li>Databases: SQL, MongoDB</li>
-              <li>ML: TensorFlow, scikit-learn</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="card shadow-sm">
-          <div class="card-body">
-            <h3 class="h6 fw-semibold mb-2">Soft Skills</h3>
-            <ul>
-              <li>Team management</li>
-              <li>Problem solving</li>
-              <li>Adaptability</li>
-              <li>Time management</li>
-            </ul>
-          </div>
-        </div>
+  <!-- Programming & Tools Section -->
+  <h2 class="section-title"> Programming & Tools</h2>
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="skill-card">
+        <i class="bi bi-code-slash skill-icon"></i>
+        <h5 class="skill-title">Programming Languages</h5>
+        <p class="skill-desc">Proficient in Python, C, C++, and Java (basics) for developing efficient and scalable applications.</p>
       </div>
     </div>
-  </main>
+    <div class="col-md-4">
+      <div class="skill-card">
+        <i class="bi bi-window skill-icon"></i>
+        <h5 class="skill-title">Web Development</h5>
+        <p class="skill-desc">Experienced with HTML, CSS, Bootstrap, and React for building responsive and modern web interfaces.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="skill-card">
+        <i class="bi bi-database skill-icon"></i>
+        <h5 class="skill-title">Databases</h5>
+        <p class="skill-desc">Hands-on experience in designing and managing SQL databases and NoSQL solutions like MongoDB.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="skill-card">
+        <i class="bi bi-robot skill-icon"></i>
+        <h5 class="skill-title">Machine Learning</h5>
+        <p class="skill-desc">Familiar with TensorFlow and scikit-learn to build and train ML models for predictive analytics.</p>
+      </div>
+    </div>
+  </div>
 
-  <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-3 mt-auto">
-    <p>© <script>document.write(new Date().getFullYear());</script> Sweetha S. All rights reserved.</p>
-  </footer>
+  <!-- Soft Skills Section -->
+  <h2 class="section-title mt-5"> Soft Skills</h2>
+  <div class="row g-4">
+    <div class="col-md-3">
+      <div class="skill-card">
+        <i class="bi bi-people-fill skill-icon"></i>
+        <h5 class="skill-title">Team Management</h5>
+        <p class="skill-desc">Skilled in organizing tasks, guiding team members, and ensuring successful project completion.</p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="skill-card">
+        <i class="bi bi-lightbulb-fill skill-icon"></i>
+        <h5 class="skill-title">Problem Solving</h5>
+        <p class="skill-desc">Able to approach challenges creatively and deliver effective solutions under pressure.</p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="skill-card">
+        <i class="bi bi-arrow-repeat skill-icon"></i>
+        <h5 class="skill-title">Adaptability</h5>
+        <p class="skill-desc">Quick to learn new tools and adjust to changing project requirements and environments.</p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="skill-card">
+        <i class="bi bi-clock-fill skill-icon"></i>
+        <h5 class="skill-title">Time Management</h5>
+        <p class="skill-desc">Excellent at prioritizing tasks and managing deadlines efficiently for smooth project delivery.</p>
+      </div>
+    </div>
+  </div>
 
+</main>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 mt-auto">
+  <p class="mb-0">© <script>document.write(new Date().getFullYear());</script> Sweetha S. All rights reserved.</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
